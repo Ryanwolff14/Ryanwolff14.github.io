@@ -5,16 +5,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+<!--     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+ -->    <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Contact</title>
+    <title>About</title>
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/shop-homepage.css" rel="stylesheet">
 	<link href="css/demo.css" rel="stylesheet">
 	<link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/gmaps.css" rel="stylesheet">
 
 </head>
 
@@ -49,7 +51,7 @@
                 <li class="dropdown">
 					<a style="font-family:Navtext;" href="#" class="dropdown-toggle" data-toggle="dropdown">External Links <span class="caret"></span></a>
 					<ul class="dropdown-menu" role="menu">
-						<li class="dropdown-header">Just a couple recomended websites</li>
+						<li class="dropdown-header" style="font-family:Titletext;">Recomended websites</li>
 						<li style="font-family:Navtext;"><a href="http://devcodecamp.com/" target="_blank">DevCodeCamp</a></li>
 						<li style="font-family:Navtext;"><a href="https://www.reddit.com/r/webdev" target="_blank">Reddit WebDev Subreddit</a></li>
 						<li style="font-family:Navtext;"><a href="http://www.w3schools.com/" target="_blank">w3schools</a></li>
@@ -70,10 +72,17 @@
 	
 	<div class="bg"></div>
 	<div class="jumbotron">
-		<h1 style="font-family:Park Tech CG; text-align:center;float:right; ">CONTAct Information</h1>
+		<h1 style="font-family:Park Tech CG; text-align:center;float:right; ">About Me</h1>
 	</div>
 
+    
+    
+    
     <div class="container">
+
+        
+
+
 
         <div class="row">
 		<ul class="nav nav-tabs">
@@ -82,29 +91,40 @@
 		</ul>
 		<div id="myTabContent" class="tab-content">
 			<div class="tab-pane fade active in" id="personal">
-				<h3 style="font-family:;">phone: 262-416-2243</h3>
-				<h3 style="font-family:">email: ryan.wolff14@outlook.com</p>
-				<p>address</p>
+				<h3 style="font-family:Titletext;">Phone Number => <!-- 262-416-2243 --></h3>
+				<h3 style="font-family:Titletext;">Email Address => ryan.wolff14@outlook.com</h3>
 			</div>
 			<div class="tab-pane fade" id="professonal">
-				<p>find me on facebook at- https://www.facebook.com/ryan.wolff.313</p>
+				<h3 style="font-family:Titletext;">Find me on facebook at <a class="glyphicon glyphicon-facetime-video" aria-hidden="true" href="https://www.facebook.com/ryan.wolff.313" style="font-size:200%;"></a></h3>
 			</div>
 		</div>
     </div>
 	</div>
 	</div>
-		
-    </div>
 
-	
+    </div>
+            <div id="style-selector-control"  class="map-control" style="font-family:Titletext;color:black;">
+              <select id="style-selector" class="selector-control">
+                <option value="default">Default</option>
+                <option value="silver">Silver</option>
+                <option value="night" selected="selected">Night mode</option>
+                <option value="retro">Retro</option>
+                <option value="hiding">Hide features</option>
+              </select>
+            </div>
+        <div id="map"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0v5yAqqzqk1NOeqH2fF1dKrhZXfx4DjI&callback=initMap"
+        async defer></script>
+        
+
 	<script src="js/sidebar.js"></script>
 	<script src="js/jquery.js"></script>
 	<script src="js/jumbotron.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/carousel.js"></script>
-
-
+    <script src="js/gmaps.js"></script>
+   
 
 </body>
 </html>
